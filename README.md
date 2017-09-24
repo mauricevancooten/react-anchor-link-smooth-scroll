@@ -8,7 +8,7 @@ React component for anchor links using the [smoothscroll](https://github.com/iam
 
 2. Add script
 
-```
+``` js
 import React from 'react'
 import ReactDOM from 'react-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'

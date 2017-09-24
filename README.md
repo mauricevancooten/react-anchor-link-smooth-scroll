@@ -4,7 +4,7 @@ React component for anchor links using the [smoothscroll](https://github.com/iam
 
 ## Instructions
 
-1. Install dependency `npm install react-anchor-link-smooth-scroll`
+1. Install dependency: `npm install react-anchor-link-smooth-scroll`
 
 2. Add script
 

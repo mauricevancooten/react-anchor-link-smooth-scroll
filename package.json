@@ -38,7 +38,6 @@
     ]
   },
   "main": "lib/anchor-link.js",
-  "module": "src/index.js",
   "scripts": {
     "compile": "NODE_ENV='production' webpack",
     "compile-watch": "NODE_ENV='development' webpack -w"

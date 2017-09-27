@@ -8,8 +8,9 @@ class AnchorLink extends Component {
   componentDidMount() {
     require('smoothscroll-polyfill').polyfill()
   }
-  smoothScroll(e, offset = 0) {
+  smoothScroll(e) {
     e.preventDefault()
+    let offset = 0
     if (typeof this.props.offset !== 'undefined') {
       offset = parseInt(this.props.offset)
     }

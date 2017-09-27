@@ -15,13 +15,13 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const SmoothScroll = () => (
   <div>
-    <AnchorLink href="#things">Things</AnchorLink>
-    <AnchorLink href="#stuff">Stuff</AnchorLink>
+    <AnchorLink href='#things'>Things</AnchorLink>
+    <AnchorLink href='#stuff'>Stuff</AnchorLink>
 
-    <section id="things">
+    <section id='things'>
      <h2>Things</h2>
     </section>
-    <section id="stuff">
+    <section id='stuff'>
       <h2>Stuff</h2>
     </section>
   </div>
@@ -31,6 +31,12 @@ ReactDOM.render(
   <SmoothScroll />,
   document.getElementById('content')
 )
+```
+
+3. Options; offset the amount of pixels from the top, for if you have a sticky navigation.
+
+```js
+ <AnchorLink offset='100' href='#things'>Stuff</AnchorLink>
 ```
 
 ## Licence

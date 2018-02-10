@@ -16,9 +16,10 @@ class AnchorLink extends Component {
     }
     const id = e.target.getAttribute('href').slice(1)
     window.scroll({
-      top: document.getElementById(`${id}`).offsetTop - offset,
+      top: document.getElementById(id).offsetTop - offset,
       behavior: 'smooth'
     })
+    this.props.onClick && this.props.onClick(e)
   }
   render() {
     return (

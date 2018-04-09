@@ -14,7 +14,7 @@ class AnchorLink extends Component {
     if (typeof this.props.offset !== 'undefined') {
       offset = parseInt(this.props.offset)
     }
-    const id = e.target.getAttribute('href').slice(1)
+    const id = e.currentTarget.getAttribute('href').slice(1)
     window.scroll({
       top: document.getElementById(id).offsetTop - offset,
       behavior: 'smooth'

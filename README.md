@@ -36,8 +36,11 @@ ReactDOM.render(
 3. Options; offset the amount of pixels from the top, for if you have a sticky navigation.
 
 ```js
- <AnchorLink offset='100' href='#things'>Stuff</AnchorLink>
+ <AnchorLink offset='100' href='#things'>Things</AnchorLink>
 ```
+## Changelog
+
+v1.0.6 (April 10th 2018), @zauni Fixed problem with nested HTML inside the anchor. @roborourke Fixed possibility of a custom onClick handler for secondary side effects. 
 
 ## Licence
 

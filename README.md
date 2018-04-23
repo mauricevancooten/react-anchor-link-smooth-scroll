@@ -40,7 +40,11 @@ ReactDOM.render(
 ```
 ## Changelog
 
-v1.0.7 (April 10th 2018), [@zauni](https://github.com/zauni) Fixed problem with nested HTML inside the anchor. [@roborourke](https://github.com/roborourke) Fixed possibility of a custom onClick handler for secondary side effects. 
+v1.0.9 (April 24th 2018), [@gazpachu](https://github.com/gazpachu) Fix to have hash change in address bar.
+
+v1.0.7 (April 10th 2018), [@zauni](https://github.com/zauni) Fixed problem with nested HTML inside the anchor.
+
+[@roborourke](https://github.com/roborourke) Fixed possibility of a custom onClick handler for secondary side effects.
 
 ## Licence
 

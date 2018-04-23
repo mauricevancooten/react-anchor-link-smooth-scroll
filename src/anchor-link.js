@@ -19,7 +19,7 @@ class AnchorLink extends Component {
       top: document.getElementById(id).offsetTop - offset,
       behavior: 'smooth'
     })
-    this.props.onClick && this.props.onClick(e)
+    If (this.props.onClick) this.props.onClick(e);
   }
   render() {
     return (

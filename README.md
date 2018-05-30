@@ -38,6 +38,13 @@ ReactDOM.render(
 ```js
  <AnchorLink offset='100' href='#things'>Things</AnchorLink>
 ```
+
+3.1 In case you need a responsive offset you can provide a function returning the needed integer to scroll from
+
+```js
+ <AnchorLink offset={() => 100} href='#things'>Things</AnchorLink>
+```
+
 ## Changelog
 
 v1.0.9 (April 24th 2018), [@gazpachu](https://github.com/gazpachu) Fix to have hash change in address bar.

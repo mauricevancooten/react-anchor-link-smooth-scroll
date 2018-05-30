@@ -10,13 +10,17 @@ class AnchorLink extends Component {
   }
   smoothScroll(e) {
     e.preventDefault()
-    let offset = 0
+    let offset = () => 0
     if (typeof this.props.offset !== 'undefined') {
-      offset = parseInt(this.props.offset)
+      if (!!(this.props.offset && this.props.offset.constructor && this.props.offset.apply)) {
+        offset = this.props.offset
+      } else {
+        offset = () => parseInt(this.props.offset)
+      }
     }
     const id = e.currentTarget.getAttribute('href').slice(1)
     window.scroll({
-      top: document.getElementById(id).offsetTop - offset,
+      top: document.getElementById(id).offsetTop - offset(),
       behavior: 'smooth'
     })
     if (this.props.onClick) {this.props.onClick(e)}

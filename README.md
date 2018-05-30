@@ -35,15 +35,16 @@ ReactDOM.render(
 
 3. Options; offset the amount of pixels from the top, for if you have a sticky navigation.
     * Regular offset
-    ```js
-     <AnchorLink offset='100' href='#things'>Things</AnchorLink>
-    ```
+
+      ```js
+       <AnchorLink offset='100' href='#things'>Things</AnchorLink>
+      ```
 
     * For responsive offset you can provide a function returning the needed integer to scroll from
 
-    ```js
-     <AnchorLink offset={() => 100} href='#things'>Things</AnchorLink>
-    ```
+      ```js
+       <AnchorLink offset={() => 100} href='#things'>Things</AnchorLink>
+      ```
 
 ## Changelog
 

@@ -34,18 +34,20 @@ ReactDOM.render(
 ```
 
 3. Options; offset the amount of pixels from the top, for if you have a sticky navigation.
+    * Regular offset
+    ```js
+     <AnchorLink offset='100' href='#things'>Things</AnchorLink>
+    ```
 
-```js
- <AnchorLink offset='100' href='#things'>Things</AnchorLink>
-```
+    * For responsive offset you can provide a function returning the needed integer to scroll from
 
-3.1 In case you need a responsive offset you can provide a function returning the needed integer to scroll from
-
-```js
- <AnchorLink offset={() => 100} href='#things'>Things</AnchorLink>
-```
+    ```js
+     <AnchorLink offset={() => 100} href='#things'>Things</AnchorLink>
+    ```
 
 ## Changelog
+
+v1.0.10 (May 30th 2018), [@DanMMX](https://github.com/DanMMX) Created an option to receive a function for an offset calculation.
 
 v1.0.9 (April 24th 2018), [@gazpachu](https://github.com/gazpachu) Fix to have hash change in address bar.
 

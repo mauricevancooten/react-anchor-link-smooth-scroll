@@ -47,7 +47,7 @@ React component for anchor links using the [smoothscroll](https://github.com/iam
 
 ## Changelog
 
-v.1.0.11 (July 24th 2018), [ericmasiello](https://github.com/ericmasiello) Remove Fixed; offset prop from being spread, to avoid remaining props spread to anchor link element.
+v.1.0.11 (July 24th 2018), [@ericmasiello](https://github.com/ericmasiello) Fixed; offset prop from being spread, to avoid remaining props spread to anchor link element.
 
 v1.0.10 (May 30th 2018), [@DanMMX](https://github.com/DanMMX) Created an option to receive a function for an offset calculation.
 

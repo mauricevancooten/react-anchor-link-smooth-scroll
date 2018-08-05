@@ -26,8 +26,9 @@ class AnchorLink extends Component {
     if (this.props.onClick) {this.props.onClick(e)}
   }
   render() {
+    const { offset, ...rest } = this.props;
     return (
-      <a {...this.props} onClick={this.smoothScroll}>{this.props.children}</a>
+      <a {...rest} onClick={this.smoothScroll} />
     )
   }
 }

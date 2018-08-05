@@ -7,31 +7,30 @@ React component for anchor links using the [smoothscroll](https://github.com/iam
 1. Install dependency: `npm install react-anchor-link-smooth-scroll`
 
 2. Add script
+    ```js
+    import React from 'react'
+    import ReactDOM from 'react-dom'
+    import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-```js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+    const SmoothScroll = () => (
+      <div>
+        <AnchorLink href='#things'>Things</AnchorLink>
+        <AnchorLink href='#stuff'>Stuff</AnchorLink>
 
-const SmoothScroll = () => (
-  <div>
-    <AnchorLink href='#things'>Things</AnchorLink>
-    <AnchorLink href='#stuff'>Stuff</AnchorLink>
+        <section id='things'>
+        <h2>Things</h2>
+        </section>
+        <section id='stuff'>
+          <h2>Stuff</h2>
+        </section>
+      </div>
+    )
 
-    <section id='things'>
-     <h2>Things</h2>
-    </section>
-    <section id='stuff'>
-      <h2>Stuff</h2>
-    </section>
-  </div>
-)
-
-ReactDOM.render(
-  <SmoothScroll />,
-  document.getElementById('content')
-)
-```
+    ReactDOM.render(
+      <SmoothScroll />,
+      document.getElementById('content')
+    )
+    ```
 
 3. Options; offset the amount of pixels from the top, for if you have a sticky navigation.
     * Regular offset
@@ -47,6 +46,8 @@ ReactDOM.render(
       ```
 
 ## Changelog
+
+v.1.0.11 (July 24th 2018), [ericmasiello](https://github.com/ericmasiello) Remove Fixed; offset prop from being spread, to avoid remaining props spread to anchor link element.
 
 v1.0.10 (May 30th 2018), [@DanMMX](https://github.com/DanMMX) Created an option to receive a function for an offset calculation.
 

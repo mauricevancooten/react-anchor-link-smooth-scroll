@@ -21,18 +21,17 @@ class AnchorLink extends Component {
     const id = e.currentTarget.getAttribute('href').slice(1)
     const $anchor = document.getElementById(id);
 
+    // Check if the change occurs for the x or y axis
     if ($anchor.getBoundingClientRect().top !== 0) {
-      const offsetTop = $anchor.getBoundingClientRect().top + window.pageYOffset;
       window.scroll({
-        top: offsetTop - offset(),
+        top: $anchor.getBoundingClientRect().top + window.pageYOffset,
         behavior: 'smooth'
-      })
+      });
     } else if ($anchor.getBoundingClientRect().left !== 0) {
-      const offsetLeft = $anchor.getBoundingClientRect().left + window.pageXOffset;
       window.scroll({
-        left: offsetLeft - offset(),
+        left: $anchor.getBoundingClientRect().left + window.pageXOffset,
         behavior: 'smooth'
-      })
+      });
     }
     if (this.props.onClick) {this.props.onClick(e)}
   }

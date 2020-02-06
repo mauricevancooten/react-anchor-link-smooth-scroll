@@ -20,11 +20,20 @@ class AnchorLink extends Component {
     }
     const id = e.currentTarget.getAttribute('href').slice(1)
     const $anchor = document.getElementById(id);
-    const offsetTop = $anchor.getBoundingClientRect().top + window.pageYOffset;
-    window.scroll({
-      top: offsetTop - offset(),
-      behavior: 'smooth'
-    })
+
+    if ($anchor.getBoundingClientRect().top !== 0) {
+      const offsetTop = $anchor.getBoundingClientRect().top + window.pageYOffset;
+      window.scroll({
+        top: offsetTop - offset(),
+        behavior: 'smooth'
+      })
+    } else if ($anchor.getBoundingClientRect().left !== 0) {
+      const offsetLeft = $anchor.getBoundingClientRect().left + window.pageXOffset;
+      window.scroll({
+        left: offsetLeft - offset(),
+        behavior: 'smooth'
+      })
+    }
     if (this.props.onClick) {this.props.onClick(e)}
   }
   render() {

@@ -24,12 +24,12 @@ class AnchorLink extends Component {
     // Check if the change occurs for the x or y axis
     if ($anchor.getBoundingClientRect().top !== 0) {
       window.scroll({
-        top: $anchor.getBoundingClientRect().top + window.pageYOffset,
+        top: $anchor.getBoundingClientRect().top + window.pageYOffset - offset(),
         behavior: 'smooth'
       });
     } else if ($anchor.getBoundingClientRect().left !== 0) {
       window.scroll({
-        left: $anchor.getBoundingClientRect().left + window.pageXOffset,
+        left: $anchor.getBoundingClientRect().left + window.pageXOffset - offset(),
         behavior: 'smooth'
       });
     }
